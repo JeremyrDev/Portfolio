@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Lato';
+	color: #dfdfdf;
+	background: #1d1e22;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+	width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: linear-gradient(to bottom, #0090FF, #0073cc);
+}
+
+.button-solid-primary {
+	font-family: Eurostile;
+	@apply text-white text-3xl font-bold px-16 py-2 bg-primary border-2 border-primary rounded-2xl;
+}
+
+.button-outline-primary {
+	font-family: Eurostile;
+	@apply text-white text-3xl font-bold px-16 py-2 border-2 border-primary rounded-2xl;
+}
+
+.menu-item {
+	@apply text-gray-400 text-xl hover:text-primary transition-all;
+}
+
+.social-icon
+{
+	@apply w-[71px] flex justify-center border-2 border-primary rounded-full p-4 fill-primary hover:fill-white hover:bg-primary transition-colors duration-200 cursor-pointer;
+}
