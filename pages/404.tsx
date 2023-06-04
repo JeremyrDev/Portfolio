@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Custom404() {
     return (
-        <div className="w-screen h-screen flex flex-col items-center justify-center gap-y-8">
+        <div className="w-full h-[90vh] flex flex-col items-center justify-center gap-y-8">
             <Image
                 src="/images/icons/shield.svg"
                 width={64}

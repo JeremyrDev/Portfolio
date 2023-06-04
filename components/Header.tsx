@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 import { TwitterIcon, LinkedInIcon, InstagramIcon, EmailIcon } from './icons';
+import Link from 'next/link';
 
 function Header() {
     let [currentProfileImage, SetCurrentProfileImage] = useState(0);
@@ -42,7 +43,7 @@ function Header() {
             </div>
 
             {/* Socials */}
-            <div className="flex flex-wrap items-center justify-center gap-8">
+            <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-8">
                 <a href="" className="social-icon">
                     <TwitterIcon height={'35px'} />
                 </a>
@@ -57,7 +58,7 @@ function Header() {
                 </a>
             </div>
 
-            <button className="button-solid-primary">View Resume</button>
+            <Link href="/Resume-2022.pdf" className="button-outline-primary">View Resume</Link>
             {/* <dialog open>
                 <form action="dialog">
                     <iframe

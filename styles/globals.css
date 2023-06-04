@@ -41,7 +41,7 @@ body::-webkit-scrollbar-thumb {
 
 .button-outline-primary {
 	font-family: Eurostile;
-	@apply text-white text-3xl font-bold px-16 py-2 border-2 border-primary rounded-2xl;
+	@apply text-white text-3xl font-bold px-16 py-2 border-4 border-primary rounded-2xl hover:bg-primary;
 }
 
 .menu-item {
@@ -50,5 +50,5 @@ body::-webkit-scrollbar-thumb {
 
 .social-icon
 {
-	@apply w-[71px] flex justify-center border-2 border-primary rounded-full p-4 fill-primary hover:fill-white hover:bg-primary transition-colors duration-200 cursor-pointer;
+	@apply w-[60px] sm:w-[65px] h-[60px] sm:h-[65px] flex items-center justify-center border-2 border-primary rounded-full fill-primary hover:fill-white hover:bg-primary transition-colors duration-200 cursor-pointer;
 }
